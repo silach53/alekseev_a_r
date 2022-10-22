@@ -39,7 +39,6 @@ void QueueP::push(const int& data) {
 
         while( (counter->next != nullptr) && (counter->next->data < data)) {
             counter = counter->next.get();
-            //std::swap(*counter, (*counter)->next);
         }
 
         std::unique_ptr<Node> item = std::make_unique<Node>(data, std::move(counter->next));
@@ -58,11 +57,6 @@ void QueueP::pop() {
         head = std::move(head->next);
         --len;
     }
-    /*
-    else {
-        throw QueueP::QueueOutOfRangeException();
-    }
-     */
 }
 
 const int& QueueP::top() const {

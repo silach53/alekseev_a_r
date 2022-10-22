@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include "QueueR/ClikeQueueR.h"
-
 int main() {
-
     struct QueueR* q = makeQueueR();
     for(int i=10; i>0; --i)
         pushQueueR(q, i);
@@ -11,6 +9,5 @@ int main() {
         printf("%d ", topQueueR(q));
         popQueueR(q);
     }
-
     return 0;
 }

@@ -49,4 +49,4 @@ public:
     ~QueueP();
 };
 
-#endif //PIVOVAROV_A_V_QUEUEP_HPP
+#endif
