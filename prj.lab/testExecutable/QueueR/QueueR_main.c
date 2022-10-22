@@ -1,6 +1,3 @@
-//
-// Created by MrFentazis on 11.10.2022.
-//
 #include <stdio.h>
 #include "QueueR/ClikeQueueR.h"
 

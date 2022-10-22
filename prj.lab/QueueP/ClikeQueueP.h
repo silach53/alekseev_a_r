@@ -1,7 +1,3 @@
-//
-// Created by MrFentazis on 11.10.2022.
-//
-
 #ifndef PIVOVAROV_A_V_CLIKEQUEUEP_H
 #define PIVOVAROV_A_V_CLIKEQUEUEP_H
 #include <stdbool.h>

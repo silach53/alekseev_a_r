@@ -1,7 +1,3 @@
-//
-// Created by mrfentazis on 28.09.22.
-//
-
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include <doctest/doctest.h>
 #include "QueueR.hpp"
@@ -77,8 +73,6 @@ TEST_CASE("QueueR::push()") {
 
 TEST_CASE("QueueR::pop() Check out of range trows") {
     QueueR q = QueueR();
-
-    // from doctest doc
     CHECK_THROWS_AS(q.top(), const QueueR::QueueOutOfRangeException&);
     CHECK_THROWS_AS(q.top(), QueueR::QueueOutOfRangeException); // same as above
 }

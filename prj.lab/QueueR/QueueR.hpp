@@ -1,7 +1,3 @@
-//
-// Created by mrfentazis on 28.09.22.
-//
-
 #pragma once
 #ifndef PIVOVAROV_A_V_QUEUER_HPP
 #define PIVOVAROV_A_V_QUEUER_HPP

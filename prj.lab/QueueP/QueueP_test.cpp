@@ -1,7 +1,3 @@
-//
-// Created by MrFentazis on 06.10.2022.
-//
-
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include <doctest/doctest.h>
 #include "QueueP.hpp"

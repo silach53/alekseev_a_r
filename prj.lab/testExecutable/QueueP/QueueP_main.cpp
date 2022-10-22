@@ -1,7 +1,3 @@
-//
-// Created by MrFentazis on 11.10.2022.
-//
-
 #include "iostream"
 #include <vector>
 #include "QueueP/QueueP.hpp"
@@ -17,11 +13,6 @@ int main() {
         std::cout << q.top() << std::endl;
         q.pop();
     }
-
-    //std::sort(v.begin(), v.end());
-
-    //for(size_t i = 0; i<v.size(); ++i)
-    //    std::cout << q.pop() << std::endl;
 
     return 0;
 }

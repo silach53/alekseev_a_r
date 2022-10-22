@@ -1,7 +1,3 @@
-//
-// Created by MrFentazis on 06.10.2022.
-//
-
 #include "QueueP.hpp"
 #include <algorithm>
 
