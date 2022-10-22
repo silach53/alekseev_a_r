@@ -1,1 +1,3 @@
+add_subdirectory(QueueR)
 add_subdirectory(QueueP)
+add_subdirectory(testExecutable)

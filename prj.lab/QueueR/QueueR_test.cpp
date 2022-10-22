@@ -1,20 +1,20 @@
 //
-// Created by MrFentazis on 06.10.2022.
+// Created by mrfentazis on 28.09.22.
 //
 
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include <doctest/doctest.h>
-#include "QueueP.hpp"
+#include "QueueR.hpp"
 #include <vector>
 #include <algorithm>
 
-TEST_CASE("QueueP::QueueP(vector<int>)") {
-    std::vector<int> v = {2, 4, 4, 1, 1, 6};
-    QueueP q(v);
+TEST_CASE("QueueR::QueueR(vector<int>)") {
+    std::vector<int> v = {2, 4, 1, 6};
+    QueueR q(v);
 
     std::sort(v.begin(), v.end());
 
-    int tmp=0;
+    int tmp = 0;
 
     for(size_t i = 0; i<v.size(); ++i) {
         tmp = q.top();
@@ -24,9 +24,9 @@ TEST_CASE("QueueP::QueueP(vector<int>)") {
 
 }
 
-TEST_CASE("QueueP::QueueP(int* mas, int len)") {
+TEST_CASE("QueueR::QueueR(int* mas, int len)") {
     int mas[] = {1, 1, 2, 4, 4, 6};
-    QueueP q(mas, 6);
+    QueueR q(mas, 6);
 
     int tmp = 0;
 
@@ -38,9 +38,9 @@ TEST_CASE("QueueP::QueueP(int* mas, int len)") {
 
 }
 
-TEST_CASE("QueueP::push()") {
+TEST_CASE("QueueR::push()") {
     std::vector<int> v(0);
-    QueueP q = QueueP();
+    QueueR q = QueueR();
 
     for(int i = 10; i>0; --i) {
         v.push_back(i);
@@ -73,14 +73,12 @@ TEST_CASE("QueueP::push()") {
         q.pop();
         REQUIRE(v[i] == tmp);
     }
-
 }
 
-
-TEST_CASE("QueueP::pop() Check trows") {
-    QueueP q = QueueP();
+TEST_CASE("QueueR::pop() Check out of range trows") {
+    QueueR q = QueueR();
 
     // from doctest doc
-    CHECK_THROWS_AS(q.top(), const QueueP::QueueOutOfRangeException&);
-    CHECK_THROWS_AS(q.top(), QueueP::QueueOutOfRangeException); // same as above
+    CHECK_THROWS_AS(q.top(), const QueueR::QueueOutOfRangeException&);
+    CHECK_THROWS_AS(q.top(), QueueR::QueueOutOfRangeException); // same as above
 }
