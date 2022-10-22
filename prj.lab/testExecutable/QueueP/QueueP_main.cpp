@@ -4,13 +4,12 @@
 #include "algorithm"
 
 int main() {
-    std::vector<int> v = {2, 4, 4, 1, 1, 6};
-    QueueP q(v);
+    std::vector<int> vi = {2, 4, 4, 1, 1, 6};
+    QueueP q(vi);
+    std::sort(vi.begin(), vi.end());
 
-    std::sort(v.begin(), v.end());
-
-    for(size_t i = 0; i<v.size(); ++i) {
-        std::cout << q.top() << std::endl;
+    for(size_t i = 0; i<vi.size(); ++i) {
+        std::cout << q.top() << " ";
         q.pop();
     }
 

@@ -1,5 +1,5 @@
-#ifndef PIVOVAROV_A_V_CLIKEQUEUEP_H
-#define PIVOVAROV_A_V_CLIKEQUEUEP_H
+#ifndef ALEKSEEV_A_R_CLIKEQUEUEP_H
+#define ALEKSEEV_A_R_CLIKEQUEUEP_H
 #include <stdbool.h>
 #ifdef __cplusplus
 extern "C" {
